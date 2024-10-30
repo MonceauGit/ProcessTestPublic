@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/server.js", "use": "@vercel/node" },
+    { "src": "public/**/*", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/", "dest": "/public/applichoice.html" },
+    { "src": "/file-content", "dest": "/api/server.js" },
+    { "src": "/folder-structure", "dest": "/api/server.js" },
+    { "src": "/roadcode", "dest": "/public/roadcode.html" },
+    { "src": "/codecss", "dest": "/public/code.css" },
+    { "src": "/codeschoice", "dest": "/public/codesotwarechoice.html" },
+    { "src": "/icon", "dest": "/public/media/code_book.ico" },
+    { "src": "/applichoice", "dest": "/public/applichoice.html" },
+    { "src": "/menu1reve", "dest": "/public/softwares/1reve/menu.html" },
+    { "src": "/codeaccueil1reve", "dest": "/public/softwares/1reve/codeaccueil.html" },
+    { "src": "/logo1reve", "dest": "/public/media/1reve.jpg" },
+    { "src": "/1revemiddle", "dest": "/public/softwares/1reve/1revemiddle.html" },
+    { "src": "/observation", "dest": "/public/softwares/1reve/observation.html" }
+  ]
+}
